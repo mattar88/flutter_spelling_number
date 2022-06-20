@@ -1,0 +1,128 @@
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/ dc: http://purl.org/dc/terms/ foaf: http://xmlns.com/foaf/0.1/ og: http://ogp.me/ns# rdfs: http://www.w3.org/2000/01/rdf-schema# sioc: http://rdfs.org/sioc/ns# sioct: http://rdfs.org/sioc/types# skos: http://www.w3.org/2004/02/skos/core# xsd: http://www.w3.org/2001/XMLSchema#">
+  
+  <head>
+  <link rel="profile" href="http://www.w3.org/1999/xhtml/vocab">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="keywords" content="Flutter Spelling Number, Spelling number, Number to words, تفقط باللغة العربية تحويل الأرقام الى كلمات">
+  <meta name="description" content="Flutter Spelling Number it's a plugin convert number to words - their written form.s">
+  <meta name="robots" content="follow, index">
+  <title>Flutter Spelling Number Plugin</title>
+ 
+    
+</head>
+<body>
+
+ <a href="https://github.com/mattar88/flutter_spelling_number" class="btn btn-default btn-primary">Back to repository</a>
+ 
+<br>   
+ <h1>Flutter Spelling Number</h1>
+<br>
+ <div id="examples">
+  <h1>Spelling in English</h1><div id="spelling_en_number"><h1>1. Example Convert Number into words</h1><div class="wrapper" style="padding-left: 39px;">   
+                    <h3>Code</h3>
+                    <pre class="code">
+           
+        SpellingNumber(
+        lang: "en",
+        digitsLengthW2F: 3,
+        decimalSeperator: "point"
+        ).convert(1625444.13)
+  
+           </pre>
+                    <h3>Number and Selling value</h3>
+                    <div class="number">1625444.13</div>
+
+                    <div class="spelling-number" style="text-transform: capitalize;"> </div>
+                </div>
+                    </div>
+<div id="spelling_en_money"><h1>2. Example Convert Dollars and Cents into words</h1><div class="wrapper" style="padding-left: 39px;">   
+                    <h3>Code</h3>
+                    <pre class="code">
+     
+
+        SpellingNumber(
+            lang: "en",
+            wholesUnit: "dollars",
+            fractionUnit: "cents",
+            digitsLengthW2F: 2,
+            decimalSeperator: "and"
+        ).convert(12300.23);
+           </pre>
+                    <h3>Number and Selling value</h3>
+                    <div class="number">12300.23</div>
+
+                    <div class="spelling-number" style="text-transform: capitalize;"></div>
+                </div>
+                    </div><div id="spelling_en_weight"><h1>3. Example Convert Weight number into words</h1><div class="wrapper" style="padding-left: 39px;">   
+                    <h3>Code</h3>
+                    <pre class="code">
+  
+        SpellingNumber(
+            lang: "en",
+            wholesUnit: "ton",
+            fractionUnit: "kg",
+            digitsLengthW2F: 3,
+            decimalSeperator: "and"
+        ).convert(100.951);
+           </pre>
+                    <h3>Number and Selling value</h3>
+                    <div class="number">100.951</div>
+
+                    <div class="spelling-number" style="text-transform: capitalize;"></div>
+                </div>
+                    </div><h1>التفقيط باللغة العربية</h1><div id="spelling_ar_number"><h1>   ١. تفقيط أو تحويل الرقم الى كلمات</h1><div class="wrapper" style="padding-left: 39px;">   
+                    <h3>Code</h3>
+                    <pre class="code">
+  
+
+     SpellingNumber(
+     lang: "ar",
+     digitsLengthW2F: 2,
+     decimalSeperator: "فاصلة"
+     ).convert(1625444.13)
+  
+           </pre>
+                    <h3>Number and Selling value</h3>
+                    <div class="number">1625444.13</div>
+
+                    <div class="spelling-number" style="text-transform: capitalize;"></div>
+                </div>
+                    </div><div id="spelling_ar_money"><h1> ٢.تفقيط العملة</h1><div class="wrapper" style="padding-left: 39px;">   
+                    <h3>Code</h3>
+                    <pre class="code">
+
+    SpellingNumber(
+        lang: "ar",
+        wholesUnit: "ليرة لبنانية",
+        fractionUnit: "قرش",
+        digitsLengthW2F: 3,
+        decimalSeperator: "و"
+    ).convert(12300.23);
+           </pre>
+                    <h3>Number and Selling value</h3>
+                    <div class="number">12300.23</div>
+
+                    <div class="spelling-number" style="text-transform: capitalize;"></div>
+                </div>
+                    </div><div id="spelling_ar_weight"><h1>  ٣.تفقيط الوزن</h1><div class="wrapper" style="padding-left: 39px;">   
+                    <h3>Code</h3>
+                    <pre class="code">
+   
+  SpellingNumber(
+    lang: "ar",
+    wholesUnit: "طن",
+    fractionUnit: "كيلوغرام",
+    digitsLengthW2F: 3,
+    decimalSeperator: "و"
+  ).convert(100.951);
+           </pre>
+                    <h3>Number and Selling value</h3>
+                    <div class="number">100.951</div>
+
+                    <div class="spelling-number" style="text-transform: capitalize;"></div>
+                </div>
+                    </div></div>
+
+
+</body></html>

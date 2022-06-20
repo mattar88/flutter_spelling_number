@@ -32,8 +32,9 @@ Import it
 Now in your Dart code, you can use:
 
  ```
-import 'package:wp_search_bar/wp_search_bar.dart';
+ import 'package:spelling_number/spelling_number.dart';
  ```
+
  ```
      SpellingNumber( 
          lang: "en",
