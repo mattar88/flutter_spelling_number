@@ -1,6 +1,6 @@
 name: spelling_number
 description: Spelling Number it's a Flutter plugin convert number to words - their written form(تفقيط أوتحويل الأرقام الى كلمات)
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/mattar88/flutter_spelling_number.git
 
 environment:
