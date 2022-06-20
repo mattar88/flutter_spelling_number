@@ -18,7 +18,7 @@
 
 With Dart:
 ```
-$ dart pub add flutter_spelling_number
+$dart pub add flutter_spelling_number
 ```
 With Flutter:
 ```
@@ -27,7 +27,7 @@ $flutter pub add flutter_spelling_number
 This will add a line like this to you package's pubspec.yaml (and run an implicit `dart pub get`):
 ```
 dependencies:
-  wp_search_bar:^0.0.1
+  spelling_number:^0.0.1
 ```
 
 ## Usage
