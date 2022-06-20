@@ -2,8 +2,12 @@
  Flutter Spelling Number it's a plugin convert number to words - their written form(تفقيط أوتحويل الأرقام الى كلمات).
 
 ## Examples
-### [Convert Number to words](https://mattar88.github.io/flutter_spelling_number/examples#spelling_en_number)
-### [تفقيط أو تحويل الرقم الى كلمات](https://mattar88.github.io/flutter_spelling_number/examples#spelling_ar_number)
+### [Convert Number to words](https://mattar88.github.io/flutter_spelling_number/example#spelling_en_number)
+### [Convert Dollars and Cents into words](https://mattar88.github.io/flutter_spelling_number/example#spelling_en_money)
+### [Convert Weight number into words](https://mattar88.github.io/flutter_spelling_number/example#spelling_en_weight)
+### [تفقيط أو تحويل الرقم الى كلمات](https://mattar88.github.io/flutter_spelling_number/example#spelling_ar_number)
+### [تفقيط مبالغ مالية وعملات](https://mattar88.github.io/flutter_spelling_number/example#spelling_ar_money)
+### [تفقيط الوزن](https://mattar88.github.io/flutter_spelling_number/example#spelling_ar_weight)
 
 ## Features:
  *  Support 14 languages includes arabic language
