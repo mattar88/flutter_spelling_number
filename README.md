@@ -27,7 +27,7 @@ $flutter pub add flutter_spelling_number
 This will add a line like this to you package's pubspec.yaml (and run an implicit `dart pub get`):
 ```
 dependencies:
-  spelling_number:^0.0.2
+  spelling_number:^0.0.3
 ```
 
 ## Usage
@@ -102,7 +102,7 @@ The following parameters have been used for the currently available languages:
 
 | Parameter       | Type    | Description                                                                                                                                        | Examples                                                                                                                                                                     |
 |-----------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `useLongScale`    | boolean | Indicates if it uses [long or short scale](http://en.wikipedia.org/wiki/Long_and_short_scales).                                                    | This differs the meaning of the words `billion`, `trillion` and so on.                                                                                                       |
+| `useLongScale`    | boolean | Indicates if it uses [long or short scale](https://en.wikipedia.org/wiki/Long_and_short_scales).                                                    | This differs the meaning of the words `billion`, `trillion` and so on.                                                                                                       |
 | `baseSeparator`   | string  | Separates the base cardinal numbers.                                                                                                               | 29 -> twenty`-`eight.  Spanish uses the connector " y "                                                                                                                      |
 | `unitSeparator`   | string  | Separates the units from the last base cardinal numbers.                                                                                           | 1234 -> one thousand two hundred **and** thirty-four                                                                                                                         |
 | `allSeparator`    | string  | Separates all cardinals, not only the last one.                                                                                                    | 1125 -> ألف **و**مائة **و**خمسة **و**عشرون                                                                                                                                   |
