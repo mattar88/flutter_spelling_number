@@ -18,16 +18,16 @@
 
 With Dart:
 ```
-$dart pub add flutter_spelling_number
+$dart pub add spelling_number
 ```
 With Flutter:
 ```
-$flutter pub add flutter_spelling_number
+$flutter pub add spelling_number
 ```
 This will add a line like this to you package's pubspec.yaml (and run an implicit `dart pub get`):
 ```
 dependencies:
-  spelling_number:^0.0.3
+  spelling_number:^0.0.4
 ```
 
 ## Usage

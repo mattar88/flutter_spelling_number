@@ -9,3 +9,8 @@
 ## 0.0.3
 
 * Improve code and documentation.
+
+## 0.0.4
+
+* Improve code and documentation.
+

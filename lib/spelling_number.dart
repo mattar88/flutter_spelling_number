@@ -1,6 +1,28 @@
+// MIT License
+
+// Copyright (c) 2022 Mohammad Attar
+
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
+
+// The above copyright notice and this permission notice shall be included in all
+// copies or substantial portions of the Software.
+
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+// SOFTWARE.
+
 library spelling_number;
 
-import 'dart:math' as Math;
+import 'dart:math' as math;
 
 class SpellingNumber {
   bool? noAnd;
@@ -2791,7 +2813,7 @@ class SpellingNumber {
 
       for (int i = 0; i < scale.length; i++) {
         units.add(rawUnits[scale[i]]);
-        _scale.add(Math.pow(10, int.parse(scale[i])) as int);
+        _scale.add(math.pow(10, int.parse(scale[i])) as int);
       }
       scale = _scale;
     }
@@ -2932,7 +2954,7 @@ class SpellingNumber {
           ? language['unitExceptions'][r]
           : null;
 
-      var number = null;
+      dynamic number;
       if (exception != null) {
         number = exception;
       } else {
@@ -3021,8 +3043,6 @@ class SpellingNumber {
   }
 
   String convert(num number) {
-    var spellingNumber = {};
-
     var languages = [
       "en",
       "es",
@@ -3115,7 +3135,7 @@ class SpellingNumber {
       double fraction = double.parse("0." +
           (b[1].substring(0, _spellingNumberDefault['digitsLengthW2F'])));
       fraction = fraction *
-          (Math.pow(
+          (math.pow(
               10,
               _spellingNumberDefault[
                   'digitsLengthW2F'])); //Convert to Fraction Unit
