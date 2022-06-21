@@ -2765,16 +2765,12 @@ class SpellingNumber {
     _spellingNumberDefault["lang"] = lang ?? _spellingNumberDefault["lang"];
   }
 
-// late var language;
+  // Converts numbers to their written form.
 
-  /**
-		 * Converts numbers to their written form.
-		 *
-		 * @param {Number} n The number to convert
-		 * @return {String} writtenN The written form of `n`
-		 */
+  // @param {Number} n The number to convert
+  // @return {String} writtenN The written form of `n`
 
-  String spelling_number(num n, Map<String, dynamic> language,
+  String _spellingNumber(num n, Map<String, dynamic> language,
       List<num> longScale, List<num> shortScale) {
     if (n < 0) {
       return "";
@@ -2832,10 +2828,10 @@ class SpellingNumber {
     if (m != 0) {
       if (_spellingNumberDefault['noAnd'] &&
           !(language['andException'] != null && language['andException'][10])) {
-        ret.add(spelling_number(m, language, longScale, shortScale));
+        ret.add(_spellingNumber(m, language, longScale, shortScale));
       } else {
         ret.add(language['unitSeparator'] +
-            spelling_number(m, language, longScale, shortScale));
+            _spellingNumber(m, language, longScale, shortScale));
       }
     }
 
@@ -2955,7 +2951,7 @@ class SpellingNumber {
             ? unit['useAlternativeBase']
             : null;
 
-        number = spelling_number(r, language, longScale, shortScale);
+        number = _spellingNumber(r, language, longScale, shortScale);
       }
 
       n -= r * scale[i];
@@ -3003,7 +2999,7 @@ class SpellingNumber {
       if (baseCardinals != null && baseCardinals[decS] != null) {
         return (baseCardinals[decS] +
             language['baseSeparator'] +
-            spelling_number(unit, language, longScale, shortScale));
+            _spellingNumber(unit, language, longScale, shortScale));
       }
     }
 
@@ -3104,7 +3100,7 @@ class SpellingNumber {
 
     var wholes = b[0];
     wholesSpelling =
-        spelling_number(double.parse(wholes), language, longScale, shortScale);
+        _spellingNumber(double.parse(wholes), language, longScale, shortScale);
 
     if (b.length > 1 &&
         _isNumeric(_spellingNumberDefault['digitsLengthW2F'].toString())) {
@@ -3123,21 +3119,24 @@ class SpellingNumber {
               10,
               _spellingNumberDefault[
                   'digitsLengthW2F'])); //Convert to Fraction Unit
-      if (fraction > 0)
+      if (fraction > 0) {
         fractionSpelling =
-            spelling_number(fraction, language, longScale, shortScale);
+            _spellingNumber(fraction, language, longScale, shortScale);
+      }
     }
 
-    if (wholesSpelling != '')
+    if (wholesSpelling != '') {
       wholesSpelling =
           wholesSpelling + ' ' + _spellingNumberDefault['wholesUnit'];
-    if (fractionSpelling != '')
+    }
+    if (fractionSpelling != '') {
       fractionSpelling = ' ' +
           _spellingNumberDefault['decimalSeperator'] +
           ' ' +
           fractionSpelling +
           ' ' +
           _spellingNumberDefault['fractionUnit'];
+    }
 
     return (wholesSpelling + fractionSpelling).trim();
   }
